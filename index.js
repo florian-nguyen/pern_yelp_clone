@@ -143,8 +143,9 @@ app.post("/api/v1/restaurants/:id/addReview", async (req, res) => {
 
 app.get("*", (req, res) => {
 	console.log(__dirname)
-	console.log(path.join(__dirname, "client/build/index.html"))
-	// res.sendFile(path.join(__dirname, "client/build/index.html"))
+	console.log(path.join(__dirname, "client/build/index.html"));
+	res.sendFile(path.join(__dirname, "client/build/index.html"));
+	res.end();
 })
 
 const port = process.env.PORT || 3001;
