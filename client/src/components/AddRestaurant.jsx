@@ -4,7 +4,7 @@ import { RestaurantsContext } from '../context/RestaurantsContext';
 
 const AddRestaurant = () => {
 
-    const { restaurants, addToRestaurants } = useContext(RestaurantsContext);
+    const { addToRestaurants } = useContext(RestaurantsContext);
 
     const [name, setName] = useState("");
     const [location, setLocation] = useState('');

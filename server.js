@@ -141,11 +141,11 @@ app.post('/api/v1/restaurants/:id/addReview', async (req, res) => {
 	}
 })
 
-app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "client/build/index.html"))
-})
+// app.get("*", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "client/build/index.html"))
+// })
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
 	console.log(`Server running and listening on port ${port}...`);
 });

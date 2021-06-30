@@ -12,6 +12,7 @@ const RestaurantDetailPage = () => {
     const { selectedRestaurant, setSelectedRestaurant } = useContext(RestaurantsContext);
 
     useEffect(() => {
+        
         const fetchData = async () => {
 
             try {
